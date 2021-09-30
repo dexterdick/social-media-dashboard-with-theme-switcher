@@ -1,0 +1,14 @@
+// Dark Theme
+body[data-theme="dark"] {
+  --Color-BG: hsl(230, 17%, 14%);
+  --Color-Top-BG-Pattern: hsl(232, 19%, 15%);
+  --Color-Card-BG: hsl(228, 28%, 20%);
+  --Color-Card-BG-active: hsl(231, 20%, 26%);
+  --Color-Text-1: hsl(228, 34%, 66%);
+  --Color-Text-2: hsl(0, 0%, 100%);
+  --Color-Toggle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+}

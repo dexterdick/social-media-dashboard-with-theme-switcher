@@ -1,0 +1,77 @@
+.overview {
+  &__heading {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-size: clamp(2rem, 2.5vw, 2.2rem);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: stretch;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  &__card {
+    padding: 2rem 2em 0 2rem;
+    background-color: var(--Color-Card-BG);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--Color-Card-BG-active);
+    }
+  }
+
+  &__stats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, min-content);
+
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  &__views {
+    font-size: 1.2rem;
+  }
+
+  &__icon {
+    width: 25px;
+  }
+
+  &__number {
+    color: var(--Color-Text-2);
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__percent {
+    font-size: 1.2rem;
+    font-weight: 700;
+    align-self: end;
+    position: relative;
+  }
+
+  &__percent--up {
+    color: var(--LimeGreen);
+    &::before {
+      content: url(/images/icon-up.svg);
+      position: absolute;
+      top: -5px;
+      left: -12px;
+    }
+  }
+
+  &__percent--down {
+    color: var(--BrightRed);
+    &::before {
+      content: url(/images/icon-down.svg);
+      position: absolute;
+      top: -5px;
+      left: -12px;
+    }
+  }
+}

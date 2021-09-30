@@ -1,0 +1,55 @@
+.toggle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+  }
+
+  &__label {
+    color: var(--Color-Text-1);
+    font-weight: 700;
+    margin-right: 2rem;
+
+    @media (min-width: 768px) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 3px;
+    background: var(--Color-Toggle);
+    width: 3.5rem;
+    height: 1.7rem;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:focus-within {
+      outline: 2px dashed red;
+    }
+  }
+
+  &__switch {
+    background-color: var(--Color-Card-BG);
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: inherit;
+    border: none;
+    outline: none;
+
+    transition: transform 0.5s ease-in;
+
+    &.active {
+      transform: translateX(23px);
+      transition: transform 0.5s ease-out;
+    }
+  }
+}

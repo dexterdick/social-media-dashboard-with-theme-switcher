@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body data-theme="dark">
+    <main class="main">
+      <header class="dashboard">
+        <div class="dashboard__wrapper">
+          <h1 class="dashboard__heading">Social Media Dashboard</h1>
+          <p class="dashboard__followers">Total Followers: 23,004</p>
+        </div>
+        <article class="toggle">
+          <div class="toggle__label">Dark Mode</div>
+          <div class="toggle__area">
+            <button class="toggle__switch"></button>
+          </div>
+        </article>
+      </header>
+      <section class="followers">
+        <article class="follower__card follower__card--fb">
+          <div class="follower__wrapper">
+            <div class="follower__icon">
+              <img src="/images/icon-facebook.svg" alt="facebook-icon" />
+            </div>
+            <h2 class="follower__name">@nathanf</h2>
+          </div>
+          <p class="follower__number">1987</p>
+          <p class="follower__label">Followers</p>
+          <p class="follower__growth follower__growth--up">12 Today</p>
+        </article>
+
+        <article class="follower__card follower__card--tw">
+          <div class="follower__wrapper">
+            <div class="follower__icon">
+              <img src="/images/icon-twitter.svg" alt="twitter-icon" />
+            </div>
+            <h2 class="follower__name">@nathanf</h2>
+          </div>
+          <p class="follower__number">1044</p>
+          <p class="follower__label">Followers</p>
+          <p class="follower__growth follower__growth--up">99 Today</p>
+        </article>
+        <article class="follower__card follower__card--ig">
+          <div class="follower__wrapper">
+            <div class="follower__icon">
+              <img src="/images/icon-instagram.svg" alt="instagram-icon" />
+            </div>
+            <h2 class="follower__name">@realnathanf</h2>
+          </div>
+          <p class="follower__number">11K</p>
+          <p class="follower__label">Followers</p>
+          <p class="follower__growth follower__growth--up">1099 Today</p>
+        </article>
+
+        <article class="follower__card follower__card--yt">
+          <div class="follower__wrapper">
+            <div class="follower__icon">
+              <img src="/images/icon-youtube.svg" alt="youtube-icon" />
+            </div>
+            <h2 class="follower__name">Nathan F.</h2>
+          </div>
+          <p class="follower__number">8239</p>
+          <p class="follower__label">subscribers</p>
+          <p class="follower__growth follower__growth--down">144 Today</p>
+        </article>
+      </section>
+      <section class="overview">
+        <h3 class="overview__heading">Overview - Today</h3>
+        <div class="overview__wrapper">
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Page Views</h4>
+              <img
+                src="/images/icon-facebook.svg"
+                alt="facebook-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">87</p>
+              <p class="overview__percent overview__percent--up">3%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Likes</h4>
+              <img
+                src="/images/icon-facebook.svg"
+                alt="facebook-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">52</p>
+              <p class="overview__percent overview__percent--down">2%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Likes</h4>
+              <img
+                src="/images/icon-instagram.svg"
+                alt="instagram-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">5462</p>
+              <p class="overview__percent overview__percent--up">2257%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Profile Views</h4>
+              <img
+                src="/images/icon-instagram.svg"
+                alt="instagram-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">52k</p>
+              <p class="overview__percent overview__percent--up">1375%</p>
+            </div>
+          </article>
+
+          <!-- second line -->
+
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Retweets</h4>
+              <img
+                src="/images/icon-twitter.svg"
+                alt="twitter-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">117</p>
+              <p class="overview__percent overview__percent--up">303%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Likes</h4>
+              <img
+                src="/images/icon-twitter.svg"
+                alt="twitter-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">507</p>
+              <p class="overview__percent overview__percent--up">553%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Likes</h4>
+              <img
+                src="/images/icon-youtube.svg"
+                alt="youtube-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">107</p>
+              <p class="overview__percent overview__percent--down">19%</p>
+            </div>
+          </article>
+          <article class="overview__card">
+            <div class="overview__stats-wrapper">
+              <h4 class="overview__views">Total Views</h4>
+              <img
+                src="/images/icon-youtube.svg"
+                alt="youtube-icon"
+                class="overview__icon"
+              />
+            </div>
+            <div class="overview__stats-wrapper">
+              <p class="overview__number">1407</p>
+              <p class="overview__percent overview__percent--down">12%</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Dexter Dick</a>.
+        </div>
+      </footer>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

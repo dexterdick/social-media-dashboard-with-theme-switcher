@@ -1,0 +1,10 @@
+// Light Theme
+body[data-theme="light"] {
+  --Color-BG: hsl(0, 0%, 100%);
+  --Color-Top-BG-Pattern: hsl(225, 100%, 98%);
+  --Color-Card-BG: hsl(227, 47%, 96%);
+  --Color-Card-BG-active: hsl(225, 25%, 94%);
+  --Color-Text-1: hsl(229, 14%, 44%);
+  --Color-Text-2: hsl(230, 17%, 14%);
+  --Color-Toggle: hsl(230, 22%, 74%);
+}

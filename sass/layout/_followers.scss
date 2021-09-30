@@ -1,0 +1,110 @@
+.followers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 3rem;
+  align-items: center;
+  justify-items: stretch;
+  text-align: center;
+
+  gap: 2rem;
+}
+
+.follower {
+  &__card {
+    cursor: pointer;
+    padding: 2rem 0;
+    background-color: var(--Color-Card-BG);
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    transition: background-color 0.05s;
+
+    &:hover {
+      background-color: var(--Color-Card-BG-active);
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &--fb::before {
+      background: var(--Facebook);
+    }
+
+    &--tw::before {
+      background: var(--Twitter);
+    }
+
+    &--ig::before {
+      background: var(--Instagram);
+    }
+
+    &--yt::before {
+      background: var(--YouTube);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    img {
+      width: 30px;
+    }
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__number {
+    color: var(--Color-Text-2);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  &__growth {
+    font-weight: 700;
+  }
+
+  &__growth--up {
+    color: var(--LimeGreen);
+
+    &::before {
+      content: url(/images/icon-up.svg);
+      position: relative;
+      top: -2px;
+      left: -4px;
+    }
+  }
+
+  &__growth--down {
+    color: var(--BrightRed);
+
+    &::before {
+      content: url(/images/icon-down.svg);
+      position: relative;
+      top: -4px;
+      left: -4px;
+    }
+  }
+}
